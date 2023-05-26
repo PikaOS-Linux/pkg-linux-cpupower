@@ -33,8 +33,5 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
         if_key_exists: replace
     
-    - name: Build Package
-      run: ./main.sh
-
     - name: Release Package
       run: ./release.sh
